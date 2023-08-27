@@ -1,7 +1,9 @@
 import './App.css';
 import CakeContainer from './components/CakeContainer';
 import { Provider } from 'react-redux';
-import store from './redux/store/store';
+import store from './app/store';
+import IcecreamContainer from './components/IcecreamContainer';
+import UserView from './components/UserView';
 
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <CakeContainer/>
+        <IcecreamContainer/>
+        <UserView/>
       </div>
     </Provider>
   );
